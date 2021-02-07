@@ -41,6 +41,8 @@
         CGINCLUDE
 
             #include "UnityCG.cginc"
+            //Include Calike Coding CustomTessellation.cginc 
+            //https://catlikecoding.com/unity/tutorials/advanced-rendering/tessellation/
             #include "CustomTessellation.cginc"
             #include "Autolight.cginc"
 
@@ -228,6 +230,7 @@
             #pragma vertex vert
             #pragma geometry geom
             #pragma fragment frag
+            //Add these two pragma statements to use Tessellation
             #pragma hull hull
             #pragma domain domain
 
